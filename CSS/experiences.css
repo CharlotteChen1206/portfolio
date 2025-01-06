@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+.experiences {
+  flex-direction: column;
+  padding: 30px 8%;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 0;
+  background: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  z-index: -1;
+  animation: none;
+}
+
+.timeline.animate::after {
+  animation: moveline 4s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+  .timeline-element {
+    position: relative;
+    padding: 20px 50px;
+    width: 50%;
+    opacity: 0;
+    z-index: auto;
+    opacity: 0;
+    animation: none;
+  }
+
+  .timeline-element.animate {
+    animation: movedown 1s linear forwards;
+  }
+
+  @keyframes movedown {
+    0% {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .timeline-element:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+
+  .timeline-element:nth-child(2) {
+    animation-delay: 1s;
+  }
+
+  .timeline-element:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+
+  .timeline-element:nth-child(4) {
+    animation-delay: 2s;
+  }
+
+  .left-timeline-element {
+    left: 0%;
+  }
+
+  .right-timeline-element {
+    left: 50%;
+  }
+
+  .experiences-icon {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+  }
+
+  .experiences-icon i {
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    }
+
+  .right-timeline-element .experiences-icon {
+    left: -20px;
+  }
+
+  .icon-img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
+
+  /* 卡片內容 */
+
+  .experiences-content {
+    border: var(--green) 2px solid;
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    transition: all 0.3s;
+  }
+
+  .experiences-content:hover {
+    background-color: var(--darkgreen);
+    transform: translateY(-5px);
+  }
+
+  .experiences-content h2 {
+    color: var(--green);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
+
+  .experiences-content small {
+    font-size: 1rem;
+    color: #aaa;
+  }
+
+  .experiences-content p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .timeline {
+      margin: 50px auto;
+    }
+
+    .timeline::after {
+      left: 31px;
+    }
+
+    .timeline-element {
+      width: 100%;
+      padding-left: 80px;
+      padding-right: 25px;
+    }
+
+    .experiences-content {
+      font-size: 13px;
+    }
+
+    .experiences-content small {
+      margin-bottom: 10px;
+    }
+
+    .right-timeline-element {
+      left: 0;
+    }
+
+    .left-timeline-element .experiences-icon, 
+    .right-timeline-element .experiences-icon {
+      left: 10px;
+    }
+  }

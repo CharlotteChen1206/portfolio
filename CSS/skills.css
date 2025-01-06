@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+  }
+
+.skills {
+    height: 100vh;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: #fff;
+    z-index: 10;
+    transform: translate(0, 80%);
+}
+
+.circular-bg {
+    height: 600px;
+    margin-top: 10%;
+    width: 100%;
+    background-image: repeating-radial-gradient(#fff 2px, #09090f 5px, #09090f 150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.skill {
+    position: absolute;
+    background-color: #fff;
+    color: #09090f;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    transform: translate(0, 0) scale(0.5);
+    transition: transform 1.5s ease, opacity 1s ease;
+    opacity: 0;
+}
+
+.skill.visible {
+    transform: translate(calc(var(--x, 0)), calc(var(--y, 0))) scale(1);
+  opacity: 1;
+}
+
+.skill:hover {
+    scale: 1.1;
+    background-color: var(--green);
+    transition: all 0.4s;
+}
+
+@media screen and (max-width:677px) {
+
+    .circular-bg {
+        background-image: repeating-radial-gradient(#fff 2px, #09090f 5px, #09090f 80px);
+    }
+}
