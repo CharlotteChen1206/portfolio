@@ -45,6 +45,67 @@
     opacity: 0;
 }
 
+.skill:nth-child(1) {
+    --x: 0vw;
+    --y: 4vw;
+  }
+  
+  .skill:nth-child(2) {
+    --x: -5vw;
+    --y: -10vw;
+  }
+  
+  .skill:nth-child(3) {
+    --x: 20vw;
+    --y: 6vw;
+  }
+  
+  .skill:nth-child(4) {
+    --x: -25vw;
+    --y: -5vw;
+  }
+  
+  .skill:nth-child(5) {
+    --x: -35vw;
+    --y: -13vw;
+  }
+  
+  .skill:nth-child(6) {
+    --x: -20vw;
+    --y: -16vw;
+  }
+  
+  .skill:nth-child(7) {
+    --x: 15vw;
+    --y: -12vw;
+  }
+  
+  .skill:nth-child(8) {
+    --x: 32vw;
+    --y: -3vw;
+  }
+  
+  .skill:nth-child(9) {
+    --x: 30vw;
+    --y: -15vw;
+  }
+  
+  .skill:nth-child(10) {
+    --x: -15vw;
+    --y: 13vw;
+  }
+  
+  .skill:nth-child(11) {
+    --x: -30vw;
+    --y: 7vw;
+  }
+  
+  .skill:nth-child(12) {
+    --x: 35vw;
+    --y: 10vw;
+  }
+  
+
 .skill.visible {
     transform: translate(calc(var(--x, 0)), calc(var(--y, 0))) scale(1);
   opacity: 1;
@@ -59,6 +120,58 @@
 @media screen and (max-width:677px) {
 
     .circular-bg {
-        background-image: repeating-radial-gradient(#fff 2px, #09090f 5px, #09090f 80px);
+        background-image: repeating-radial-gradient(#fff 2px, #09090f 5px, #09090f 60px);
     }
+
+    .skill {
+        font-size: 12px;
+    }
+    .skill:nth-child(1) {
+        --x: 0vw;
+        --y: 8vw;
+      }
+      .skill:nth-child(2) {
+        --x: -10vw;
+        --y: -17vw;
+      }
+      .skill:nth-child(3) {
+        --x: 18vw;
+        --y: 25vw;
+      }
+      .skill:nth-child(4) {
+        --x: -30vw;
+        --y: -3vw;
+      }
+      .skill:nth-child(5) {
+        --x: -35vw;
+        --y: -20vw;
+      }
+      .skill:nth-child(6) {
+        --x: -25vw;
+        --y: -38vw;
+      }
+      .skill:nth-child(7) {
+        --x: 10vw;
+        --y: -28vw;
+      }
+      .skill:nth-child(8) {
+        --x: 25vw;
+        --y: -10vw;
+      }
+      .skill:nth-child(9) {
+        --x: 35vw;
+        --y: -35vw;
+      }
+      .skill:nth-child(10) {
+        --x: -20vw;
+        --y: 35vw;
+      }
+      .skill:nth-child(11) {
+        --x: -30vw;
+        --y: 20vw;
+      }
+      .skill:nth-child(12) {
+        --x: 38vw;
+        --y: 35vw;
+      }
 }
