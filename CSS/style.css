@@ -294,7 +294,6 @@ body h1 {
     font-size: 30px;
     color: #fff;
     cursor: pointer;
-    display: none;
 }
 
 .ham-menu-icon .fa-bars {
@@ -337,6 +336,16 @@ body h1 {
     font-size: 30px;
     color: #fff;
     cursor: pointer;
+}
+
+.copyright  {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #262626;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 20px;
 }
 
 

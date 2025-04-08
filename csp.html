@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/75d7c65c9d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <title>Frontend Project - Details</title>
+  <style>
+
+.hero {
+  height: auto;
+}
+    .header h1 a {
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 30px;
+    color: #fff;
+    font-family: var(--inter);
+    }
+
+    .project-detail-container {
+      padding: 100px 10%;
+      background-color: var(--black);
+      color: #fff;
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+    }
+
+    .project-detail-container h1 {
+      margin: 0;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .project-detail-container h2 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .project-detail-container .tech {
+      font-size: 16px;
+      color: var(--green);
+      margin-bottom: 20px;
+    }
+
+    .project-detail-container p {
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 800px;
+    }
+
+
+    .underline {
+      border: none;
+      height: 1px;
+      background-color: #333;
+      width: 400px;
+      margin: 20px 0;
+    }
+
+    .slider {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 500px;
+      margin-top: 40px;
+    }
+
+    .slider-box {
+      margin: auto;
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .slide {
+      display: none;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slider-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .slider button {
+      background-color: var(--green);
+      color: #000;
+      border: none;
+      padding: 12px 18px;
+      font-size: 24px;
+      cursor: pointer;
+      border-radius: 10px;
+      z-index: 10;
+      transition: background-color 0.3s;
+    }
+
+    .slider button:hover {
+      background-color: #fff;
+    }
+
+    .project-links {
+      margin-top: 30px;
+    }
+
+    .project-links a {
+      text-decoration: none;
+      border: 2px solid var(--green);
+      color: var(--green);
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    .project-links a:hover {
+      background-color: var(--green);
+      color: #000;
+    }
+
+    .copyright {
+      margin-top: 0;
+    }
+
+    @media screen and (max-width:977px) {
+      .project-detail-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 5%;
+      }
+
+      .project-detail-container h1 {
+        font-size: 36px;
+      }
+
+      .project-detail-container p {
+        font-size: 14px;
+      }
+
+      .project-links a {
+        font-size: 14px;
+        padding: 8px 12px;
+      }
+
+      .slider {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero">
+    <div class="header">
+      <div class="logo">
+        <p>C</p>
+        <h1><a href="index.html">Charlotte.</a></h1>
+      </div>
+      <div class="links">
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#experiences">Experiences</a>
+        <a href="index.html#projects">Projects</a>
+      </div>
+
+      <div class="contact-me">
+        <a href="index.html#contact">Contact Me</a>
+      </div>
+
+      <div class="ham-menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="ham-menu">
+        <i class="fa-solid fa-xmark"></i>
+        <ul>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#experiences">Experiences</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="project-detail-container">
+      <div class="content">
+        <h1>Chill Sip Pop</h1>
+        <p class="tech">Branding & packaging design, Logo creation, Adobe Illustrator & Photoshop, Market positioning & audience targeting</p>
+        <h2>Introduction</h2>
+        <p>
+          Chill Sip Pop is a fictional cocktail popsicle brand created for a class project. We were tasked with building
+          a brand identity and packaging system based on the name and brief provided by our instructor. Inspired by the
+          fun, social, and summery vibe of cocktails, we used colorful vintage-style gradients and fruit icons to
+          highlight flavor and appeal to a young, outgoing audience. The result is a playful yet modern design that
+          balances clarity and personality.
+        </p>
+        <h2>Research & Data</h2>
+        <p>We studied packaging trends, color psychology, and consumer behavior to guide our choices. Key insights
+          included the importance of instant flavor recognition and using vibrant, energetic visuals to stand out in
+          retail spaces. Our target demographic was 25–40-year-olds with active social lifestyles.</p>
+        <hr class="underline">
+
+        <div class="project-links">
+          <a href="https://drive.google.com/drive/folders/1sDFNYRmTU-3UPrCAjoPScHW3-AVFrVIS?usp=drive_link"
+            target="_blank">Google Drive</a>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slider-box">
+          <div class="slides">
+            <img src="images/csp.jpg" class="slide active" alt="Screenshot 1">
+            <img src="images/csp2.jpeg" class="slide" alt="Screenshot 2">
+            <img src="images/csp3.png" class="slide" alt="Screenshot 3">
+          </div>
+          <div class="slider-buttons">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © 2024 Charlotte Chen. All rights reserved.</p>
+    </div>
+</body>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let currentSlide = 0;
+  const menuIcon = document.querySelector('.fa-bars');
+  const menu = document.querySelector('.ham-menu');
+  const closeIcon = document.querySelector('.fa-xmark');
+
+  document.querySelector('.next').addEventListener('click', () => {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  });
+
+  document.querySelector('.prev').addEventListener('click', () => {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+  });
+
+  menuIcon.addEventListener('click', () => {
+    menu.classList.add('active');
+  });
+
+  closeIcon.addEventListener('click', () => {
+    menu.classList.remove('active');
+  });
+
+</script>
+
+</html>

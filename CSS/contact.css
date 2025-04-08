@@ -79,16 +79,6 @@ form input, form textarea {
     border-radius: 7px;
 }
 
-.copyright  {
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background-color: #262626;
-    color: #fff;
-    font-weight: 300;
-    margin-top: 20px;
-}
-
 #msg {
     color: var(--green);
     font-weight: bold;
