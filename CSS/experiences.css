@@ -153,6 +153,9 @@
   }
 
   @media screen and (max-width: 600px) {
+    .experiences h1 {
+      font-size: 50px;
+    }
     .timeline {
       margin: 50px auto;
     }
